@@ -1,1 +1,639 @@
 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - CXOBE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5ba9 100%);
+            color: white;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .app-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #4299e1, #38b2ac);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .app-name {
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+        
+        .app-tagline {
+            font-size: 1rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-info a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Main Content Styles */
+        .privacy-policy {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin: 2rem auto;
+            padding: 2.5rem;
+        }
+        
+        .last-updated {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h1 {
+            color: #1a365d;
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .intro-text {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            background-color: #f8fafc;
+            border-left: 4px solid #4299e1;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        /* TOC Styles */
+        .toc-container {
+            background-color: #f8fafc;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        
+        .toc-title {
+            font-size: 1.3rem;
+            color: #1a365d;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .toc-list {
+            list-style-type: none;
+            column-count: 2;
+        }
+        
+        .toc-list li {
+            margin-bottom: 0.8rem;
+            break-inside: avoid;
+        }
+        
+        .toc-list a {
+            color: #2d5ba9;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+        
+        .toc-list a:hover {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+        
+        /* Section Styles */
+        .policy-section {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .policy-section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            color: #1a365d;
+            font-size: 1.5rem;
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #e2e8f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #1a365d;
+        }
+        
+        .policy-content p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+        
+        .policy-content ul, .policy-content ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .policy-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .highlight-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #4299e1;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #1a365d;
+            color: #cbd5e0;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+        }
+        
+        .footer-links a {
+            color: #cbd5e0;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            
+            .contact-info {
+                text-align: center;
+            }
+            
+            .toc-list {
+                column-count: 1;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                gap: 1.5rem;
+                text-align: center;
+            }
+            
+            .footer-links a {
+                margin: 0 0.75rem;
+            }
+            
+            .privacy-policy {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            header, footer, .toc-container {
+                display: none;
+            }
+            
+            .privacy-policy {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="app-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div>
+                        <h1 class="app-name">CXOBE</h1>
+                        <p class="app-tagline">Your privacy is our priority</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:ojekonlinepku@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                        ojekonlinepku@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <main class="privacy-policy">
+            <div class="last-updated">
+                Last Updated: January 28, 2026
+            </div>
+            
+            <h1>Privacy Policy</h1>
+            
+            <div class="intro-text">
+                This Privacy Policy describes how CXOBE ("we", "us", or "our") collects, uses, and shares your personal information when you use our application. We are committed to protecting your privacy and handling your data in an open and transparent manner.
+            </div>
+            
+            <div class="toc-container">
+                <h2 class="toc-title"><i class="fas fa-list"></i> Table of Contents</h2>
+                <ul class="toc-list">
+                    <li><a href="#information-we-collect"><i class="fas fa-chevron-right"></i> Information We Collect</a></li>
+                    <li><a href="#how-we-use-information"><i class="fas fa-chevron-right"></i> How We Use Your Information</a></li>
+                    <li><a href="#information-sharing"><i class="fas fa-chevron-right"></i> Information Sharing and Disclosure</a></li>
+                    <li><a href="#data-security"><i class="fas fa-chevron-right"></i> Data Security</a></li>
+                    <li><a href="#your-rights"><i class="fas fa-chevron-right"></i> Your Rights and Choices</a></li>
+                    <li><a href="#children-privacy"><i class="fas fa-chevron-right"></i> Children's Privacy</a></li>
+                    <li><a href="#changes-to-policy"><i class="fas fa-chevron-right"></i> Changes to This Policy</a></li>
+                    <li><a href="#contact-us"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="policy-section" id="information-we-collect">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    Information We Collect
+                </h2>
+                <div class="policy-content">
+                    <p>We collect several types of information from and about users of our application:</p>
+                    
+                    <h3>Personal Information</h3>
+                    <p>When you register for an account or use certain features, we may collect personal information that can identify you, such as:</p>
+                    <ul>
+                        <li>Name and contact information (email address)</li>
+                        <li>Account credentials (username and encrypted password)</li>
+                        <li>Profile information you choose to provide</li>
+                        <li>Payment information for premium services (processed by secure third-party providers)</li>
+                    </ul>
+                    
+                    <h3>Usage Data</h3>
+                    <p>We automatically collect information about your interaction with the CXOBE application, including:</p>
+                    <ul>
+                        <li>Device information (device type, operating system, unique device identifiers)</li>
+                        <li>Log data (IP address, browser type, pages visited, access times)</li>
+                        <li>Usage patterns and preferences</li>
+                        <li>Crash reports and performance data</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Note:</strong> We use cookies and similar tracking technologies to collect some of this information. You can control the use of cookies through your browser settings.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="how-we-use-information">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    How We Use Your Information
+                </h2>
+                <div class="policy-content">
+                    <p>We use the information we collect for the following purposes:</p>
+                    <ul>
+                        <li>To provide, maintain, and improve the CXOBE application and services</li>
+                        <li>To personalize your experience and deliver content relevant to your interests</li>
+                        <li>To process transactions and send related information</li>
+                        <li>To communicate with you about updates, security alerts, and support messages</li>
+                        <li>To detect, prevent, and address technical issues and security vulnerabilities</li>
+                        <li>To analyze usage trends and optimize user experience</li>
+                        <li>To comply with legal obligations and enforce our terms of service</li>
+                    </ul>
+                    
+                    <p>We process your personal information based on the following legal grounds:</p>
+                    <ol>
+                        <li><strong>Performance of a contract:</strong> When we need to fulfill our obligations under our Terms of Service.</li>
+                        <li><strong>Legitimate interests:</strong> When processing is necessary for our legitimate business interests, provided they don't override your rights.</li>
+                        <li><strong>Consent:</strong> When you've given us clear consent to process your data for a specific purpose.</li>
+                        <li><strong>Legal obligations:</strong> When processing is necessary to comply with the law.</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="information-sharing">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    Information Sharing and Disclosure
+                </h2>
+                <div class="policy-content">
+                    <p>We do not sell, trade, or rent your personal information to third parties. We may share your information in the following circumstances:</p>
+                    
+                    <h3>Service Providers</h3>
+                    <p>We may share information with trusted third-party service providers who assist us in operating our application, conducting our business, or servicing you, so long as those parties agree to keep this information confidential and use it only for the purposes we've specified.</p>
+                    
+                    <h3>Legal Requirements</h3>
+                    <p>We may disclose your information if required to do so by law or in response to valid requests by public authorities (e.g., a court or government agency).</p>
+                    
+                    <h3>Business Transfers</h3>
+                    <p>If CXOBE is involved in a merger, acquisition, or asset sale, your personal information may be transferred as a business asset. We will provide notice before your information becomes subject to a different privacy policy.</p>
+                    
+                    <h3>Aggregated or Anonymized Data</h3>
+                    <p>We may share aggregated or anonymized information that does not directly identify you for research, marketing, analytics, or other business purposes.</p>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="data-security">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    Data Security
+                </h2>
+                <div class="policy-content">
+                    <p>We implement appropriate technical and organizational security measures designed to protect your personal information from accidental or unlawful destruction, loss, alteration, unauthorized disclosure, or access. These measures include:</p>
+                    
+                    <ul>
+                        <li>Encryption of data in transit using SSL/TLS protocols</li>
+                        <li>Secure storage of sensitive information using industry-standard encryption</li>
+                        <li>Regular security assessments and vulnerability testing</li>
+                        <li>Access controls and authentication procedures</li>
+                        <li>Employee training on data protection principles</li>
+                    </ul>
+                    
+                    <p>Despite our safeguards, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee its absolute security.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Data Retention:</strong> We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including for legal, accounting, or reporting requirements. When no longer needed, we securely delete or anonymize your information.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="your-rights">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    Your Rights and Choices
+                </h2>
+                <div class="policy-content">
+                    <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+                    
+                    <ul>
+                        <li><strong>Access:</strong> Request access to the personal information we hold about you.</li>
+                        <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information.</li>
+                        <li><strong>Deletion:</strong> Request deletion of your personal information under certain circumstances.</li>
+                        <li><strong>Restriction:</strong> Request restriction of processing of your personal information.</li>
+                        <li><strong>Data Portability:</strong> Request transfer of your data to another organization in a structured format.</li>
+                        <li><strong>Objection:</strong> Object to processing of your personal information in certain situations.</li>
+                        <li><strong>Withdraw Consent:</strong> Withdraw consent at any time where we rely on consent to process your information.</li>
+                    </ul>
+                    
+                    <p>To exercise these rights, please contact us at <strong>ojekonlinepku@gmail.com</strong>. We may need to verify your identity before processing your request.</p>
+                    
+                    <h3>Additional Choices</h3>
+                    <p>You also have control over your information through:</p>
+                    <ul>
+                        <li>Account settings within the CXOBE application</li>
+                        <li>Opting out of marketing communications (using the unsubscribe link in emails)</li>
+                        <li>Browser controls to block or delete cookies</li>
+                        <li>Device permissions for location, camera, contacts, etc.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="children-privacy">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    Children's Privacy
+                </h2>
+                <div class="policy-content">
+                    <p>CXOBE is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately.</p>
+                    
+                    <p>If we learn we have collected personal information from a child under 13 without verification of parental consent, we will take steps to delete that information as quickly as possible.</p>
+                    
+                    <p>For users between 13 and 18 years old, we recommend that they review this privacy policy with a parent or guardian to ensure they understand and agree to it.</p>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="changes-to-policy">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    Changes to This Policy
+                </h2>
+                <div class="policy-content">
+                    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technologies, legal requirements, or other factors. When we make changes, we will update the "Last Updated" date at the top of this policy.</p>
+                    
+                    <p>If we make material changes to how we process your personal information, we will provide notice through the CXOBE application or by other means, such as email, to give you the opportunity to review the changes before they become effective.</p>
+                    
+                    <p>We encourage you to periodically review this Privacy Policy to stay informed about our information practices and the ways you can help protect your privacy.</p>
+                </div>
+            </div>
+            
+            <div class="policy-section" id="contact-us">
+                <h2 class="section-title">
+                    <div class="section-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    Contact Us
+                </h2>
+                <div class="policy-content">
+                    <p>If you have any questions or concerns about this Privacy Policy or our data practices, please contact us:</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>CXOBE Privacy Team</strong></p>
+                        <p><i class="fas fa-envelope"></i> Email: <strong>ojekonlinepku@gmail.com</strong></p>
+                        <p>We aim to respond to all inquiries within 5-7 business days.</p>
+                    </div>
+                    
+                    <p>You also have the right to lodge a complaint with a data protection authority if you believe our processing of your personal information violates applicable data protection laws.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">CXOBE</div>
+                <div class="copyright">© 2026 CXOBE. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for table of contents links
+        document.querySelectorAll('.toc-list a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Update URL hash without jumping
+                    history.pushState(null, null, targetId);
+                }
+            });
+        });
+        
+        // Highlight current section in TOC while scrolling
+        const sections = document.querySelectorAll('.policy-section');
+        const tocLinks = document.querySelectorAll('.toc-list a');
+        
+        function highlightCurrentSection() {
+            let currentSection = '';
+            let scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                const sectionId = section.getAttribute('id');
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSection = sectionId;
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${currentSection}`) {
+                    link.classList.add('active');
+                    link.innerHTML = `<i class="fas fa-chevron-right"></i> ${link.textContent}`;
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', highlightCurrentSection);
+        
+        // Add print functionality
+        const printButton = document.createElement('button');
+        printButton.innerHTML = '<i class="fas fa-print"></i> Print Policy';
+        printButton.style.cssText = `
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1a365d;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            z-index: 100;
+        `;
+        
+        printButton.addEventListener('click', () => window.print());
+        document.body.appendChild(printButton);
+    </script>
+</body>
+</html>
